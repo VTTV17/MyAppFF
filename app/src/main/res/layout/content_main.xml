@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1e90ff"
+    tools:context="haidang.com.myappff.MainActivity"
+    >
+    <LinearLayout
+        android:background="@drawable/style_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_idfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_namefb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_locationfriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/SpinnerShareLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imgvReload"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_reload"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btnFindPath"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_directions_black_24dp"
+            />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragmentMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <!--<ImageButton-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:id="@+id/imgsave"-->
+
+            <!--android:background="@drawable/ic_save"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--/>-->
+        </fragment>
+</LinearLayout>
+
+

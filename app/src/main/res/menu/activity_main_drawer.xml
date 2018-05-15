@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_infor"
+            android:icon="@drawable/ic_infuser"
+            android:title="Thông tin" />
+        <item
+            android:id="@+id/nav_friend"
+            android:icon="@drawable/ic_friends"
+            android:title="Bạn bè" />
+        <item
+            android:id="@+id/nav_friendrq"
+            android:icon="@drawable/ic_add_friend"
+            android:title="Yêu cầu kết bạn" />
+        <item
+            android:id="@+id/nav_locationrq"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Chia sẻ vị trí"
+
+            />
+
+        <item
+            android:id="@+id/nav_find_friend"
+            android:icon="@drawable/ic_search_friend"
+            android:title="Tìm kiếm bạn bè" />
+        <item
+
+            android:id="@+id/nav_savelocaton"
+            android:title="Lưu vị trí hiện tại"
+            android:icon="@drawable/ic_save"
+
+            />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_invite"
+                android:icon="@drawable/ic_invite"
+                android:title="Mời bạn bè" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Đăng xuất" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="haidang.com.myappff.ListLocationRqActivity">
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBarLLRq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:id="@+id/layoutSearch"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/btnBackLocation"
+                android:background="@null"
+                android:src="@drawable/ic_back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:text="Chia sẻ vị trí"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:text="Yêu cầu vị trí"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:layout_margin="10dp"
+            android:layout_weight="5"
+            android:id="@+id/listLocatinRq"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </ListView>
+        <ImageView
+            android:src="@drawable/line_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:text="Danh sách chia sẻ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:layout_margin="10dp"
+            android:layout_weight="5"
+            android:id="@+id/listSharedLocation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>
